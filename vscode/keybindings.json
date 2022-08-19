@@ -1,0 +1,71 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+alt+enter",
+        "command": "-editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+alt+enter",
+        "command": "-search.action.replaceAll",
+        "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+    },
+    {
+        "key": "ctrl+alt+enter",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "phpunit.run-test-at-cursor",
+        "when": "editorTextFocus && editorLangId == 'php'"
+    },
+    {
+        "key": "meta+t meta+t",
+        "command": "-phpunit.run-test-at-cursor",
+        "when": "editorTextFocus && editorLangId == 'php'"
+    },
+    {
+        "key": "shift+alt+enter",
+        "command": "editor.action.showDefinitionPreviewHover"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 10
+        }
+    },
+    {
+        "key": "ctrl+down",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 10
+        }
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.navigateBackInNavigationLocations"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.navigateForwardInNavigationLocations"
+    }
+]
